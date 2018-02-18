@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context="com.ilve.ilive.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/action_bar_custom"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+            android:layout_width="wrap_content"
+            android:text="@string/prescription"
+            android:textColor="#FFFFFF"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/buttons_layout"
+        android:layout_below="@id/action_bar_custom"
+        android:padding="@dimen/common_padding">
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/avenir_next_bold"
+            android:text="@string/user_name"
+            android:textColor="@color/colorBLack"
+            android:textSize="16sp" />
+
+        <RelativeLayout
+            android:id="@+id/options_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/user_name">
+
+            <TextView
+                android:id="@+id/user_age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/user_age"
+                android:textColor="@color/colorBLack"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/last_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_assignment_turned_in" />
+
+            <ImageView
+                android:id="@+id/second_last_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/last_icon"
+                android:layout_toStartOf="@id/last_icon"
+                android:src="@drawable/ic_assignment_turned_in" />
+
+            <ImageView
+                android:id="@+id/thired_last_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/second_last_item"
+                android:layout_toStartOf="@id/second_last_item"
+                android:src="@drawable/ic_assignment_turned_in" />
+
+            <ImageView
+                android:id="@+id/forth_last_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/thired_last_icon"
+                android:layout_toStartOf="@id/thired_last_icon"
+                android:src="@drawable/ic_assignment_turned_in" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/forth_last_icon"
+                android:layout_toStartOf="@id/forth_last_icon"
+                android:src="@drawable/ic_assignment_turned_in" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/horizontal_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/options_view"
+            android:background="@color/colorBLack" />
+
+        <TextView
+            android:id="@+id/text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/horizontal_line"
+            android:fontFamily="@font/avenir_next_bold"
+            android:text="@string/rx"
+            android:textColor="@color/colorBLack" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/horizontal_line"
+            android:fontFamily="@font/avenir_next_regular"
+            android:text="@string/_30_aug_2016"
+            android:textColor="@color/colorBLack"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_view"
+            android:layout_marginEnd="@dimen/common_padding"
+            android:layout_marginLeft="@dimen/common_padding"
+            android:layout_marginRight="@dimen/common_padding"
+            android:layout_marginStart="@dimen/common_padding"
+            android:fontFamily="@font/avenir_next_regular"
+            android:hint="Enter text" />
+
+        <TextView
+            android:id="@+id/problems_symptoms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edit_text"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="@dimen/common_padding"
+            android:minWidth="200dp"
+            android:drawableLeft="@drawable/ic_assignment_turned_in"
+            android:drawableStart="@drawable/ic_assignment_turned_in"
+            android:fontFamily="@font/avenir_next_regular"
+            android:background="@drawable/white_background_with_effects"
+            android:gravity="center_vertical"
+            android:text="@string/problems_symptoms"
+            android:textColor="@drawable/selector_for_first_page" />
+
+        <TextView
+            android:id="@+id/physical_examinations"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/problems_symptoms"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="@dimen/common_padding"
+            android:minWidth="200dp"
+            android:drawableLeft="@drawable/ic_assignment_turned_in"
+            android:drawableStart="@drawable/ic_assignment_turned_in"
+            android:background="@drawable/white_background_with_effects"
+            android:fontFamily="@font/avenir_next_regular"
+            android:gravity="center_vertical"
+            android:text="@string/physical_examination"
+            android:textColor="@drawable/selector_for_first_page" />
+
+        <TextView
+            android:id="@+id/diagnosis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/physical_examinations"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="@dimen/common_padding"
+            android:minWidth="200dp"
+            android:drawableLeft="@drawable/ic_assignment_turned_in"
+            android:drawableStart="@drawable/ic_assignment_turned_in"
+            android:fontFamily="@font/avenir_next_regular"
+            android:background="@drawable/white_background_with_effects"
+            android:gravity="center_vertical"
+            android:text="@string/diagnosis"
+            android:textColor="@drawable/selector_for_first_page" />
+
+        <TextView
+            android:id="@+id/tests"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/diagnosis"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="@dimen/common_padding"
+            android:minWidth="200dp"
+            android:background="@drawable/white_background_with_effects"
+            android:drawableLeft="@drawable/ic_assignment_turned_in"
+            android:drawableStart="@drawable/ic_assignment_turned_in"
+            android:fontFamily="@font/avenir_next_regular"
+            android:gravity="center_vertical"
+            android:text="@string/tests"
+            android:textColor="@drawable/selector_for_first_page" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@id/buttons_layout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/button_preview"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/background_with_effect_for_button"
+            android:drawableLeft="@drawable/ic_remove_red_eye"
+            android:drawableStart="@drawable/ic_remove_red_eye"
+            android:paddingStart="30dp"
+            android:paddingEnd="30dp"
+            android:paddingRight="30dp"
+            android:paddingLeft="30dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="@string/preview"
+            android:textColor="@color/colorWhite" />
+
+        <TextView
+            android:id="@+id/button_send"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_marginStart="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/background_with_effect_for_button"
+            android:drawableLeft="@drawable/ic_ic_near_me_black_24px"
+            android:drawableStart="@drawable/ic_ic_near_me_black_24px"
+            android:paddingStart="50dp"
+            android:paddingEnd="50dp"
+            android:paddingRight="40dp"
+            android:paddingLeft="40dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="@string/send"
+            android:textColor="@color/colorWhite" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">iLIve</string>
+    <string name="user_name">User Name</string>
+    <string name="user_age">user_age</string>
+    <string name="rx">Rx</string>
+    <string name="_30_aug_2016">30 Aug, 2016</string>
+    <string name="problems_symptoms">PROBLEMS / SYMPTOMS</string>
+    <string name="physical_examination">PHYSICAL EXAMINATION</string>
+    <string name="diagnosis">DIAGNOSIS</string>
+    <string name="send">Send</string>
+    <string name="preview">Preview</string>
+    <string name="tests">TESTS</string>
+    <string name="save_and_next">Save and Next</string>
+    <string name="hello">Hello</string>
+    <string name="prescription">Prescription</string>
+    <string name="problems">Problems</string>
+    <string name="physical">Physical</string>
+    <string name="diagnosis_test">Diagnosis Tests</string>
+    <string name="hint_text_problems">Please enter your problems</string>
+    <string name="hint_text_reports">Please enter your Physical examination reports</string>
+    <string name="hint_text_diagnosis_reports">Please enter diagnosis reports</string>
+    <string name="dummy_texy">It is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry.</string>
+    <string name="refer">Refer</string>
+    <string name="no_internet">No internet connection</string>
+
+</resources>
